@@ -175,4 +175,15 @@ h3 {
       /* Faz cada botão ocupar uma linha própria */
       margin: 10px 0;
    }
+
+   /* TRANSIÇÃO ENTRE PÁGINAS */
+   body {
+      opacity: 1;
+      transition: opacity 0.4s ease;
+   }
+
+   body.fade-out {
+      opacity: 0;
+   }
+
 }
