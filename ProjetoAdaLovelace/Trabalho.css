@@ -92,11 +92,16 @@ h3 {
    border-radius: 10px;
 }
 
+.Euimg  {
+   text-align: center;
+   margin: 20px 0;
+}
+
 .Euimg img {
    max-width: 280px;
    height: auto;
-   border-top-left-radius: 20px;
-   border-bottom-right-radius: 20px;
+   border-top-left-radius: 30px;
+   border-bottom-right-radius: 30px;
 }
 
 /* RODAPÉ (Página Inicial) */
