@@ -6,45 +6,49 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #f1f1f0;
     color: #4d626e;
     font-family: "Work Sans", serif;
     font-weight: 500;
 }
 
-header{
+header {
     padding: 2rem;
     background-color: #acbfca;
     text-align: center;
 }
 
-main{
+main {
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-h2{
+h2 {
     color: #688392;
     font-size: 1.2rem;
 }
 
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
     accent-color: rgba(100, 188, 230, 0.067);
 }
 
-input[type="text"], input[type="password"], input[type="date"], input[type="email"] {
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"] {
     width: 100%;
     padding: 0.6rem;
-    border: 2px solid rgba(88, 144, 170, 0.521); 
+    border: 2px solid rgba(88, 144, 170, 0.521);
     outline: none;
     border-radius: 10px;
     background-color: transparent;
@@ -55,7 +59,7 @@ input::placeholder {
 }
 
 select {
-    cursor:pointer;
+    cursor: pointer;
     background-color: #c2d6e0d5;
     color: #577180;
     border-radius: 5px;
@@ -192,6 +196,7 @@ footer a {
         opacity: 0;
         transform: translateY(15px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
