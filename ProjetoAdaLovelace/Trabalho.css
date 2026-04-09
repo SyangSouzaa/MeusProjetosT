@@ -1,0 +1,178 @@
+/* RESET PADRÃO */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #f8f9fa;
+   color: #333;
+   line-height: 1.6;
+}
+
+/* HEADER PADRONIZADO */
+header {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgb(192, 167, 113);
+   padding: 20px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+   font-size: 24px;
+   color: #000;
+}
+
+.menu ul {
+   display: flex;
+   list-style: none;
+   gap: 20px;
+}
+
+.menu ul li a {
+   text-decoration: none;
+   color: #000;
+   font-weight: 600;
+   padding: 8px 15px;
+   transition: 0.3s;
+}
+
+.menu ul li a:hover {
+   background-color: rgba(255, 255, 255, 0.3);
+   border-radius: 5px;
+}
+
+/* CONTÊINER UNIVERSAL (O segredo da padronização) */
+main,
+.container-geral {
+   max-width: 900px;
+   /* Largura idêntica para todas as páginas */
+   margin: 40px auto;
+   /* Centraliza e dá espaço no topo/fundo */
+   padding: 0 40px;
+   /* Borda interna para o texto não colar */
+   background-color: white;
+   /* Opcional: cria um visual de "folha" centralizada */
+   padding: 40px;
+   /* Espaço interno */
+   border-radius: 10px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* TIPOGRAFIA PADRÃO */
+h2 {
+   font-size: 28px;
+   color: rgb(150, 130, 80);
+   margin-bottom: 20px;
+   border-left: 5px solid rgb(192, 167, 113);
+   padding-left: 15px;
+}
+
+p,
+h3 {
+   font-weight: normal;
+   font-size: 17px;
+   margin-bottom: 20px;
+   text-align: justify;
+}
+
+/* IMAGENS CENTRALIZADAS */
+.Adaimg {
+   text-align: center;
+   margin: 20px 0;
+}
+
+.Adaimg img {
+   max-width: 280px;
+   height: auto;
+   border-radius: 10px;
+}
+
+/* RODAPÉ (Página Inicial) */
+.VM {
+   text-align: center;
+   margin-top: 20px;
+}
+
+.VM a {
+   display: inline-block;
+   background: rgb(192, 167, 113);
+   color: white;
+   padding: 10px 20px;
+   margin: 5px;
+   border-radius: 5px;
+   text-decoration: none;
+   font-weight: bold;
+   transition: 0.3s;
+}
+
+.VM a:hover {
+   background: rgb(160, 140, 90);
+}
+
+/* ANIMAÇÃO PARA A PÁGINA SOBRE */
+.animar {
+   animation: fadeUp 1s ease-out;
+}
+
+@keyframes fadeUp {
+   from {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+/* RESPONSIVIDADE PARA CELULARES (Telas até 768px) */
+@media (max-width: 768px) {
+
+   /* Transforma o menu horizontal em vertical para caber na tela */
+   header {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+   }
+
+   .menu ul {
+      flex-direction: column;
+      /* Empilha os links */
+      gap: 10px;
+      padding: 0;
+   }
+
+   /* Ajusta o container principal para ocupar quase toda a largura da tela */
+   main,
+   .container-geral {
+      margin: 20px 10px;
+      /* Diminui a margem externa */
+      padding: 20px;
+      /* Diminui o espaçamento interno */
+      max-width: 100%;
+      /* Garante que não ultrapasse a tela */
+   }
+
+   /* Ajusta o tamanho dos títulos para telas menores */
+   h2 {
+      font-size: 22px;
+   }
+
+   /* Garante que a imagem da Ada não fique grande demais */
+   .Adaimg img {
+      max-width: 200px;
+   }
+
+   /* Ajusta os botões do rodapé da Página Inicial */
+   .VM a {
+      display: block;
+      /* Faz cada botão ocupar uma linha própria */
+      margin: 10px 0;
+   }
+}
